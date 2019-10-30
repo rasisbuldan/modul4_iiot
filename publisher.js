@@ -17,6 +17,6 @@ client.on('connect', function () {
         client.publish('topic/sensor1',n.toString(),{retain: true});
         client.publish('topic/sensor2',n.toString(),{retain: true});
         client.publish('topic/sensor3',n.toString(),{retain: true});
-        console.log("published message");
+        console.log("published message to broker");
     },200)
 })
